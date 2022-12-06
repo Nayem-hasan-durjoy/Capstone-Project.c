@@ -1,0 +1,3 @@
+FILE* fp, *ft; //FILE *fp; To open a file you need to use the fopen function, which returns a FILE pointer.
+// Once you've opened a file, 
+//you can use the FILE pointer to let the compiler perform input and output functions on the file.

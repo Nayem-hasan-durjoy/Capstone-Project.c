@@ -1,0 +1,32 @@
+void addrecord() //function to add record 
+ {
+     system("cls"); //is a library function of stdlib. h. This function is used to run system.
+                   //cls is a command to clear the output screen.
+     fseek(fp, 0,SEEK_END); //fseek sets file position
+                           //SEEK_END : It denotes end of the file.
+                          // SEEK_SET : It denotes starting of the file.
+                         //SEEK_CUR : It denotes file pointer's current position. 
+     char another = 'y';
+
+     while(another=='y') {
+        printf("\nEnter Team Name :");
+        scanf("%s",&e.name);
+
+        printf("\nEnter team Point :");
+        scanf("%f",&e.point);
+        printf("\nEnter Winning Match :");
+        scanf("%d",&e.win);
+        printf("\Enter matches lost");
+        scanf("%d",&e.lost);
+
+        fwrite(&e,size,1,fp); //to read and write binary data 
+                              //This writes contents of variable e into the file.
+                              // It specifies the number of bytes of each item to be written
+                              //It is a pointer to the file where data items will be written.
+
+        printf("Want to add another"
+             "record (Y/N) :");
+        fflush(stdin); //used to flush the output buffer of the stream
+        scanf("%c",&another);
+     }
+ }

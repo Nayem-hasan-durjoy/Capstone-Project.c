@@ -1,0 +1,13 @@
+
+void gotoxy(int x, int y) //void is a function that does not return value, does not accept parameters and could point to different types 
+{
+    cord.X= x;
+    cord.Y= y;
+    setconsolecursorposition(
+               GetStdHandle(STD_OUTPUT_HANDLE),
+                             cord);
+}
+
+//In C, if you don’t specify the parameters of a function, it can accept any number of perameter of any type.
+//. If you come from another programming language, this could be confusing at first. The way to define a function, 
+//that does not accept parameters in C is to use the keyword.
