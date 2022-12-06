@@ -1,0 +1,9 @@
+struct emp { // Structure in C is used for defining user-defined data types.
+    char name[50];
+    float point;
+    int win;
+    int lost;
+};
+struct emp e;
+long int size = sizeof(e); //The sizeof(variable) operator computes the size of a variable. And to print the result returned by sizeof
+COORD cord = {0,0};

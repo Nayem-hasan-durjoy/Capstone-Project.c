@@ -1,0 +1,2 @@
+long int size = sizeof(e); //The sizeof(variable) operator computes the size of a variable. And to print the result returned by sizeof
+COORD cord = {0,0};
